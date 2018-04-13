@@ -1,0 +1,115 @@
+:root {
+  /* fonts */
+  --main-font-family: 'Open Sans', sans-serif;
+  --main-font-family-2: 'VT323', monospace;
+  --heading-font-family: 'Montserrat', sans-serif;
+  --heading-font-serif-1: 'Playfair Display', serif;
+  --heading-font-serif-2: 'Lora', serif;
+
+  /* colors */
+  --electric-blue: #0000FF;
+  --electric-yellow: #FFFF00;
+  --electric-green: #00FF00;
+  --electric-turq: #00FFFF;
+  --electric-purple: #8000FF;
+  --electric-orange: #FFB300;
+  --electric-pink: #FF00EA;
+  --electric-red: #FF0000;
+
+  --almost-white: #f7f7f7;
+  --gray-darker: #696969;
+  --gray: #ccc;
+  --gray-lighter: #E8E8E8;
+  --gray-lightest: #F0F0F0;
+  --almost-black: #282828;
+
+  /* sizes */
+  --space: 1rem;
+
+  /* font-weights */
+  --light: 300;
+  --medium: 600;
+  --heavy: 900;
+
+  /* transitions */
+  --smooth: ease-in-out 0.8s;
+  --smooth-border: border 0.5s ease-in-out;
+
+  /* box-shadows */
+  --smooth-light-shadow: 0 2px 4px var(--almost-white), 0 2px 4px rgba(0,0,0,0.24);
+  --smooth-dark-shadow: 0 1.5rem 2rem rgba(0,0,0,0.3), 0 0 2rem rgba(0,0,0,0.1);
+  --smooth-big-dark-shadow: 0 4px 100px var(--almost-white), 0 4px 100px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10 px */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: var(--main-font-family-2);
+  background: var(--electric-blue);
+  /* grid
+  background-color: var(--almost-white);
+  background-image:
+  linear-gradient(transparent 11px, rgba(220,220,200,.8) 12px, transparent 12px),
+  linear-gradient(90deg, transparent 11px, rgba(220,220,200,.8) 12px, transparent 12px);
+  background-size: 100% 12px, 12px 100%;
+  */
+
+  /* polka
+  background:
+  radial-gradient(var(--almost-white) 2px, transparent 3px),
+  radial-gradient(var(--almost-white) 2px, transparent 3px),
+  #fff;
+  background-position: 0 0, 20px 20px;
+  background-size: 40px 40px;
+  */
+
+  /* tiny grid
+  background-color: var(--almost-black);
+  background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 1px, transparent 6px);
+  background-size: 4px 4px;
+  */
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--main-font-family-2);
+  font-size: 5vw;
+  font-weight: var(--light);
+  text-align: left;
+  text-transform: lowercase;
+  text-decoration: none;
+  letter-spacing: 0.25rem;
+  color: white;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+
+
+
+
+main {
+  display: grid;
+  grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+  grid-gap: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  z-index: 1;
+}
