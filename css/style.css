@@ -321,3 +321,49 @@ button:hover {
 button:active {
   transform: translate3d(0, 0.5rem, 0);
 }
+
+
+
+
+
+.ex2 {
+  grid-area: 3 / 7 / span 16 / span 8;
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(7, 1fr);
+  grid-gap: 0;
+  background: transparent;
+}
+
+.top2 {
+  grid-area: 1 / 1 / span 1 / span 7;
+  background: transparent;
+}
+
+.bot2 {
+  grid-area: 10 / 1 / span 1 / span 7;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: transparent;
+  font-family: var(--heading-ff-ss-4);
+  font-size: 3vw;
+  font-weight: var(--bold);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.25rem;
+  color: var(--almost-white);
+}
+
+.products {
+  grid-area: 2 / 2 / span 8 / span 5;
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+  grid-gap: 1rem;
+  background: transparent;
+}
+
+.img1:hover {
+  animation: updown 5s infinite ease-in-out;
+}
