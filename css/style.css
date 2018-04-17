@@ -365,5 +365,5 @@ button:active {
 }
 
 .img1:hover {
-  animation: updown 5s infinite ease-in-out;
+  animation: updown 3s infinite ease-in-out;
 }
