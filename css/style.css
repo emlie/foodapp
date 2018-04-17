@@ -216,6 +216,11 @@ main {
 
 
 
+.ex1 {
+  grid-area: 1 / 1 / span 20 / span 20;
+  display: none;
+}
+
 .product-title {
   grid-area: 3 / 6 / span 3 / span 10;
   display: flex;
